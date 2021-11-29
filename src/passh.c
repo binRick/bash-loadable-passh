@@ -33,35 +33,35 @@
 #include "process_iterator.h"
 #include "process_iterator.c"
 
-int hello_builtin (list) WORD_LIST *list; {
-  printf("hello world\n");
+int passh_builtin (list) WORD_LIST *list; {
+  printf("passh world\n");
   fflush (stdout);
   return (EXECUTION_SUCCESS);
 }
 
-int hello_builtin_load (s) char *s; {
-  printf ("hello builtin loaded\n");
+int passh_builtin_load (s) char *s; {
+  printf ("passh builtin loaded\n");
   fflush (stdout);
   return (1);
 }
 
-void hello_builtin_unload (s) char *s; {
-  printf ("hello builtin unloaded\n");
+void passh_builtin_unload (s) char *s; {
+  printf ("passh builtin unloaded\n");
   fflush (stdout);
 }
 
-char *hello_doc[] = {
+char *passh_doc[] = {
 	"Sample builtin.",
 	"",
-	"this is the long doc for the sample hello builtin",
+	"this is the long doc for the sample passh builtin",
 	(char *)NULL
 };
 
-struct builtin hello_struct = {
-	"hello",
-	hello_builtin,
+struct builtin passh_struct = {
+	"passh",
+	passh_builtin,
 	BUILTIN_ENABLED,
-	hello_doc,
-	"hello",
+	passh_doc,
+	"passh",
 	0
 };

@@ -1,4 +1,4 @@
-AC_INIT(hello, 0.1)
+AC_INIT(passh, 0.1)
 
 # Many autoconf project creates a config.h.  however the bash headers
 # already use their own version of config.h that, since bash 4.4, is
@@ -18,7 +18,7 @@ AC_SUBST([finish_cmds], [""])
 AC_SUBST([libdir], ["$libdir/bash"])
 
 AC_CONFIG_MACRO_DIRS([m4])
-AC_CONFIG_SRCDIR([src/hello.c])
+AC_CONFIG_SRCDIR([src/passh.c])
 
 AC_PROG_CC
 AC_PROG_INSTALL

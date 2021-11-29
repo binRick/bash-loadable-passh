@@ -1,7 +1,7 @@
-lib_LTLIBRARIES = hello.la
+lib_LTLIBRARIES = passh.la
 
-hello_la_SOURCES = hello.c
+passh_la_SOURCES = passh.c
 
 # this is required to build .so with a nonstandard name, also avoid
 # the numbering
-hello_la_LDFLAGS= -module -avoid-version
+passh_la_LDFLAGS= -module -avoid-version
